@@ -1,0 +1,10 @@
+# ignore emacs backup files
+*~
+
+# ignore SolidWorks temporary files
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+
+# ignore OS X desktops
+.DS_Store
