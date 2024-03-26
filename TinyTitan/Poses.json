@@ -1,0 +1,46 @@
+{
+    "stand":{
+        "RIGHT_KNEE": 90,
+        "LEFT_KNEE": 90
+    },
+    "squat":{
+        "RIGHT_KNEE": 90,
+        "LEFT_KNEE": 90
+    },
+    "neutral":{
+        "RIGHT_ANKLE" : 90,
+        "RIGHT_KNEE" : 90,
+        "RIGHT_HIP" : 90,
+        "RIGHT_SHOULDER" : 90,
+        "RIGHT_ELBOW" : 90,
+        "LEFT_ANKLE" : 90,
+        "LEFT_KNEE" : 90,
+        "LEFT_HIP" : 90,
+        "LEFT_SHOULDER" : 90,
+        "LEFT_ELBOW" : 90
+    },
+    "jitter1":{
+        "RIGHT_ANKLE" : 80,
+        "RIGHT_KNEE" : 80,
+        "RIGHT_HIP" : 80,
+        "RIGHT_SHOULDER" : 80,
+        "RIGHT_ELBOW" : 80,
+        "LEFT_ANKLE" : 80,
+        "LEFT_KNEE" : 80,
+        "LEFT_HIP" : 80,
+        "LEFT_SHOULDER" : 80,
+        "LEFT_ELBOW" : 80
+    },
+    "jitter2":{
+        "RIGHT_ANKLE" : 100,
+        "RIGHT_KNEE" : 100,
+        "RIGHT_HIP" : 100,
+        "RIGHT_SHOULDER" : 100,
+        "RIGHT_ELBOW" : 100,
+        "LEFT_ANKLE" : 100,
+        "LEFT_KNEE" : 100,
+        "LEFT_HIP" : 100,
+        "LEFT_SHOULDER" : 100,
+        "LEFT_ELBOW" : 100
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "squat":
+    [
+        ["stand", 0],
+        ["squat", 1000],
+        ["stand", 1000]
+    ],
+    "neutralize":
+    [
+        ["neutral", 0]
+    ],
+    "jitter":
+    [
+        ["jitter1", 100],
+        ["jitter2", 100],
+        ["jitter1", 100],
+        ["jitter2", 100]
+    ]
+}
