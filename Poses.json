@@ -1,0 +1,10 @@
+{
+    "stand":{
+        "RIGHT_KNEE": 90,
+        "LEFT_KNEE": 90
+    },
+    "squat":{
+        "RIGHT_KNEE": 90,
+        "LEFT_KNEE": 90
+    }
+}
