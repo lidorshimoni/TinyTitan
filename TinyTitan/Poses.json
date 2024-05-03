@@ -9,13 +9,13 @@
     },
     "neutral":{
         "RIGHT_ANKLE" : 90,
-        "RIGHT_KNEE" : 90,
-        "RIGHT_HIP" : 90,
+        "RIGHT_KNEE" : 80,
+        "RIGHT_HIP" : 70,
         "RIGHT_SHOULDER" : 90,
         "RIGHT_ELBOW" : 90,
         "LEFT_ANKLE" : 90,
         "LEFT_KNEE" : 90,
-        "LEFT_HIP" : 90,
+        "LEFT_HIP" : 100,
         "LEFT_SHOULDER" : 90,
         "LEFT_ELBOW" : 90
     },
@@ -42,5 +42,39 @@
         "LEFT_HIP" : 100,
         "LEFT_SHOULDER" : 100,
         "LEFT_ELBOW" : 100
+    },
+    "RIGHT_SMALL_STEP":
+    {
+        "RIGHT_HIP" : 50,
+        "RIGHT_ANKLE" : 100,
+        "RIGHT_KNEE": 100,
+        "LEFT_HIP" : 110,
+        "LEFT_ANKLE" : 95
+    },
+    "RIGHT_STEP":
+    {
+        "RIGHT_HIP" : 60,
+        "RIGHT_ANKLE" : 110,
+        "LEFT_HIP" : 60,
+        "LEFT_ANKLE" : 110
+    },
+    "LEFT_STEP":
+    {
+        "RIGHT_HIP" : 110,
+        "RIGHT_ANKLE" : 70,
+        "LEFT_HIP" : 110,
+        "LEFT_ANKLE" : 70
+    },
+    "ONE_LEG_STAND":
+    {
+        "RIGHT_KNEE": 105,
+        "LEFT_HIP" : 70,
+        "LEFT_ANKLE" :110
+    },
+    "OTHER_LEG_STAND":
+    {
+        "RIGHT_KNEE": 105,
+        "LEFT_HIP" : 70,
+        "LEFT_ANKLE" :110
     }
 }

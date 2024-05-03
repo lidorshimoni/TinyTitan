@@ -1,65 +1,61 @@
 {
     "limbs":
     {
-        "RIGHT_ANKLE": {
+        "RIGHT_HIP": {
             "motorPin": 0,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
         "RIGHT_KNEE": {
             "motorPin": 1,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
-        "RIGHT_HIP": {
+        "RIGHT_ANKLE": {
             "motorPin": 2,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
         "RIGHT_SHOULDER": {
             "motorPin": 3,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
         "RIGHT_ELBOW": {
             "motorPin": 4,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
-        "LEFT_ANKLE": {
+        "LEFT_HIP": {
             "motorPin": 5,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
-            
+            "defaultSpeed": 255,
         }, 
         "LEFT_KNEE": {
             "motorPin": 6,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
-            
+            "defaultSpeed": 255,
         }, 
-        "LEFT_HIP": {
+        "LEFT_ANKLE": {
             "motorPin": 7,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
-            
+            "defaultSpeed": 255,
         }, 
         "LEFT_SHOULDER": {
             "motorPin": 8,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
+            "defaultSpeed": 255,
             
         }, 
         "LEFT_ELBOW": {
             "motorPin": 9,
             "rangeOfMotion": [85, 95],
-            "defaultSpeed": 255
-            
+            "defaultSpeed": 255,
         } 
     }
 }

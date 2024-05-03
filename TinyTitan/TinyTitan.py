@@ -1,6 +1,6 @@
 import time
 from Witmotion16chServoDriverV2.Witmotion16chServoDriverV2 import Witmotion16chServoDriverV2
-import json
+import json5 as json
 import logging
 
 logger = logging.Logger(__name__)
@@ -26,13 +26,17 @@ class TinyTitan:
         self.limbs = {}
         self.poses = {}
         self.animations = {}
+        self.load_all_configurations()
+        logger.debug("TinyTitan Created!")
+    
+    def load_all_configurations(self):
         self.load_config()
         self.load_poses()
         self.load_animations()
-        logger.debug("TinyTitan Created!")
+        
 
     @classmethod
-    def is_connected(cls):
+    def is_able_to_connect(cls):
         logger.debug(f"Conncted Devices: {Witmotion16chServoDriverV2.list_devices()}")
         return len(Witmotion16chServoDriverV2.list_devices()) > 0 
     
@@ -41,20 +45,33 @@ class TinyTitan:
             self.driver.open_bluetooth(*args, **kwargs)
         else:
             self.driver.open_serial(*args, **kwargs)
+    
+    def close(self):
+        self.driver.close()        
 
     def neutralize(self):
         # for motor in self.limbs.values():
-        for motor in range(16):
-            self.driver.set_position(motor, 90)
-        logger.debug("Moved motors to neutral position!")
+        # for motor in range(16):
+            # self.driver.set_position(motor, 90)
+        # for limb, config in self.limbs.items():
+        #     self.move_limb(limb, config["neutral_point"])
+        # logger.debug("Moved motors to neutral position!")
+        self.move_to_pose("neutral")
     
-    def jitter(self):
-        time.sleep(0.2)
-        for motor in range(16):
-            self.driver.set_position(motor, 85)
-        time.sleep(0.2)
-        for motor in range(16):
-            self.driver.set_position(motor, 95)
+    def check_all_limbs(self):
+        for limb in self.limbs.keys():
+            self.move_limb(limb, 80)
+            time.sleep(200)
+            self.move_limb(limb, 90)
+            time.sleep(200)
+            self.move_limb(limb, 100)
+            time.sleep(200)
+            self.move_limb(limb, 90)
+            time.sleep(1)
+
+    def list_animations(self):
+        for key, value in self.animations.items():
+            print(key, value)
 
     def validate_limbs(self, limbs):
         for limb, limb_config in limbs.items():
@@ -66,15 +83,15 @@ class TinyTitan:
             raise Exception("Pose contains an unknown limb!")
 
     def load_animations(self):
-        with open("Animations.json") as f:
+        with open("TinyTitan/Animations.json") as f:
             self.animations = json.load(f)
     
     def load_poses(self):
-        with open("Poses.json") as f:
+        with open("TinyTitan/Poses.json") as f:
             self.poses = json.load(f)
 
     def load_config(self):
-        with open("TinyTitanConfig.json") as f:
+        with open("TinyTitan/TinyTitanConfig.json") as f:
             self.config = json.load(f)
         limbs = self.config.get("limbs", {})
         self.validate_limbs(limbs)

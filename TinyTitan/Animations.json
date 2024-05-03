@@ -14,6 +14,18 @@
         ["jitter1", 100],
         ["jitter2", 100],
         ["jitter1", 100],
-        ["jitter2", 100]
+        ["jitter2", 100],
+        ["neutral", 100]
+    ],
+    "walk":
+    [
+        ["RIGHT_STEP", 400],
+        ["LEFT_STEP", 400],
+        ["RIGHT_STEP", 400],
+        ["LEFT_STEP", 400],
+        ["RIGHT_STEP", 400],
+        ["LEFT_STEP", 400],
+        ["neutral", 400]
     ]
+
 }
